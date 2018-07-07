@@ -54,6 +54,12 @@
     <Folder Include="Context\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\App.BusinessLayer\App.BusinessLayer.csproj">
+      <Project>{2ffac3ec-defe-428e-968c-97a3e82ee197}</Project>
+      <Name>App.BusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

@@ -312,6 +312,14 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\App.BusinessLayer\App.BusinessLayer.csproj">
+      <Project>{2ffac3ec-defe-428e-968c-97a3e82ee197}</Project>
+      <Name>App.BusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\App.IoCModules\App.IoCModules.csproj">
+      <Project>{3ab907ef-bd45-46b6-ac39-2661e759cc07}</Project>
+      <Name>App.IoCModules</Name>
+    </ProjectReference>
     <ProjectReference Include="..\App.VerticalLayer\App.VerticalLayer.csproj">
       <Project>{50eba2a4-e704-4f2f-8f5d-f381cd2eaf7f}</Project>
       <Name>App.VerticalLayer</Name>
