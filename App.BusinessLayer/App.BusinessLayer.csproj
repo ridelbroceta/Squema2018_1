@@ -45,19 +45,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\BusinessLayerModule.cs" />
+    <Compile Include="Behaviors\Constraints\TestConstraint.cs" />
+    <Compile Include="Behaviors\Services\TestService.cs" />
+    <Compile Include="Contracts\Constraints\ITestConstraint.cs" />
+    <Compile Include="Contracts\Core\IRepository.cs" />
+    <Compile Include="Contracts\Core\ITrackable.cs" />
+    <Compile Include="Contracts\Repositories\IEntityTestRepository.cs" />
+    <Compile Include="Contracts\Services\ITestService.cs" />
+    <Compile Include="Domain\EntityTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Behaviors\Constraints\" />
-    <Folder Include="Behaviors\Services\" />
-    <Folder Include="Contracts\Constraints\" />
-    <Folder Include="Contracts\Repositories\" />
-    <Folder Include="Contracts\Services\" />
-    <Folder Include="Domain\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
