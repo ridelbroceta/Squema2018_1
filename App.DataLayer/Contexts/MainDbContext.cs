@@ -6,12 +6,12 @@ using App.BusinessLayer.Contracts.Core;
 
 namespace App.DataLayer.Contexts
 {
-    public class MyDbContext : DbContext
+    public class MainDbContext : DbContext
     {
 
-        public MyDbContext() : base("name=MyDbContext")
+        public MainDbContext() : base("name=MainDbContext")
         {
-            Database.SetInitializer<MyDbContext>(null);
+            Database.SetInitializer<MainDbContext>(null);
 
             Configuration.LazyLoadingEnabled = false;
             Configuration.ProxyCreationEnabled = false;
