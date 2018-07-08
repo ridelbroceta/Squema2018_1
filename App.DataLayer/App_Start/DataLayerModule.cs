@@ -7,6 +7,7 @@
 // =====================================================
 #endregion
 
+using App.DataLayer.Contexts;
 using Autofac;
 //using App.Data.Model;
 
@@ -23,7 +24,7 @@ namespace App.DataLayer
 
             //set Entity Framework context to instance per lifetime scope. 
             //This is important as we get one context per lifetime, so all db classes are tracked together.
-            //builder.RegisterType<DefaultContext>().InstancePerLifetimeScope();
+            builder.RegisterType<MainDbContext>().InstancePerLifetimeScope();
         }
     }
 

@@ -8,7 +8,7 @@ namespace App.DataLayer.Repositories
 {
     public class EntityTestRepository : GenericRepository, IEntityTestRepository
     {
-        public EntityTestRepository(MyDbContext dbContext) : base(dbContext)
+        public EntityTestRepository(MainDbContext dbContext) : base(dbContext)
         {
         }
 

@@ -7,9 +7,9 @@ namespace App.DataLayer.Core
 {
     public class GenericRepository : IRepository
     {
-        protected readonly MyDbContext Db;
+        protected readonly MainDbContext Db;
 
-        public GenericRepository(MyDbContext dbContext)
+        public GenericRepository(MainDbContext dbContext)
         {
             //…          //set internal values         
             Db = dbContext;
