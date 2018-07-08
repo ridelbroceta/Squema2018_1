@@ -10,7 +10,8 @@
 using System.Reflection;
 using System.Web.Http;
 using System.Web.Mvc;
-using App.IoCModules;
+using App.BusinessLayer;
+using App.DataLayer;
 using App.UILayer.Business;
 using App.VerticalLayer.Infrastructure;
 using Autofac;
@@ -71,7 +72,9 @@ namespace App.UILayer
             builder.RegisterAssemblyTypes(typeof(IFirstTest).Assembly).AsImplementedInterfaces();
 
             //register the service layer, which then registers all other dependencies in the rest of the system
-            builder.RegisterModule(new IoCModuleRegisterFactory());
+            builder.RegisterModule(new DataLayerModule());
+            builder.RegisterModule(new BusinessLayerModule());
+
 
         }
 
