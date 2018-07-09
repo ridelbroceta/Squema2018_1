@@ -65,7 +65,7 @@ namespace App.UILayer
             //Register your Web API controllers.  
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
             
-            //try this
+            //try this for all the contracts in the application
             //builder.RegisterControllers(typeof(MvcApplication).Assembly);
             
             
