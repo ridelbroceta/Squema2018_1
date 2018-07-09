@@ -55,7 +55,10 @@ namespace App.UILayer
 
             var builder = new ContainerBuilder();
             Load(builder);
-
+            
+            ////this is the manager of the components important
+           // builder.RegisterAssemblyTypes(typeof(IManager).Assembly).AsImplementedInterfaces();
+            
             return builder.Build();
         }
 
