@@ -64,7 +64,11 @@ namespace App.UILayer
 
             //Register your Web API controllers.  
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly());
-
+            
+            //try this
+            //builder.RegisterControllers(typeof(MvcApplication).Assembly);
+            
+            
             ////Register service layer: autowire all 
             //builder.RegisterAssemblyTypes(GetType().Assembly).AsImplementedInterfaces();
 
